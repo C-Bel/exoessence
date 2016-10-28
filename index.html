@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Station Essence</title>
+  </head>
+  <body>
+  <img src="essence.jpg" alt="" />
+    <h1>Choisissez votre essence :</h1>
+
+    <FORM NAME="form3">
+    <INPUT TYPE="radio" NAME="choix" VALUE="SANS PLOMB 95">SANS PLOMB 95<BR>
+    <INPUT TYPE="radio" NAME="choix" VALUE="DIESEL">DIESEL<BR>
+    <INPUT TYPE="radio" NAME="choix" VALUE="GAZOLE">GAZOLE<BR>
+    <INPUT TYPE="button"NAME="but" VALUE="Valider" onClick="choixprop(form3)">
+    </FORM>
+
+<script type="text/javascript">
+
+alert ('Bienvenue dans votre station essence!');
+
+function choixprop(form3) {
+if (form3.choix[0].checked) { alert("Vous avez choisis du " + form3.choix[0].value) };
+if (form3.choix[1].checked) { alert("Vous avez choisis du " + form3.choix[1].value) };
+if (form3.choix[2].checked) { alert("Vous avez choisi du " + form3.choix[2].value) };
+prompt('Entrez votre code');
+alert('Code bon, Vous pouvez vous servir.');
+
+}
+
+
+
+</script>
+
+
+  </body>
+</html>
